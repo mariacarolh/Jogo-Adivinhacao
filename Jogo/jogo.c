@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 #define NUMERO_TENTATIVAS 11 
 
 int main()
