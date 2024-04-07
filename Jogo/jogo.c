@@ -86,7 +86,7 @@ int main(){
             printf("   _/_______\\_  		  \n");
             printf(" /___________\\ 		\n\n");
             printf("Parabens, voce acertou na tentativa %d !! O numero secreto e: %d\n", i, numerosecreto);
-            printf("Pontuacao %.1f: ", pontos);
+            printf("Pontuacao %.1f: \n", pontos);
             break;
         }
 
@@ -98,6 +98,7 @@ int main(){
             printf("     | ~~~ |          \n");
             printf("     |R.I.P|          \n");
             printf("\\vV,,|_____|V,VV,, \n\n");
-            printf("Nao foi dessa vez! O numero secreto era: %d", numerosecreto);
+            printf("Nao foi dessa vez! O numero secreto era: %d\n", numerosecreto);
         }
+    system("pause");     
 }
