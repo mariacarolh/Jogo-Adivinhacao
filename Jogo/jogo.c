@@ -16,7 +16,7 @@ int main(){
     int nivel;
     int numerotentativas;
 
-    printf("Selecione um nivel de dificuldade\n");
+    printf("\nSelecione um nivel de dificuldade\n");
     printf("1 (Facil) | 2 (Medio) 3 (Dificil)\n");
     scanf("%d", &nivel);
 
@@ -33,11 +33,26 @@ int main(){
             numerotentativas = 5;
             break;
     }
-
-    printf("- - - - - - - - - - \n");
-    printf("JOGO DE ADIVINHACAO \n");
-    printf("- - - - - - - - - - \n");
     
+    printf("                - - - - - - - - - - -               \n");
+    printf(" 		 JOGO DE ADIVINHACAO			            \n");
+    printf("                - - - - - - - - - - -               \n");
+    printf("            _                           _		    \n");
+    printf("            ;`.                       ,'/		    \n");
+    printf("            |`.`-.      _____      ,-;,'|		    \n");
+    printf("            |  `-.\\__,-'     `-.__//'   |		    \n");
+    printf("            |     `|               \\ ,  |		    \n");
+    printf("            `.  ```                 ,  .'		    \n");
+    printf("              \\_`      .     ,   ,  `_/		    \n");
+    printf("                \\    ^  `   ,   ^ ` /			    \n");
+    printf("                 | '  |  ____  | , |			    \n");
+    printf("                 |     ,'    `.    |			    \n");
+    printf("                 |    (  O' O  )   |			    \n");
+    printf("                 `.    \\__,.__/   ,'			    \n");
+    printf("                   `-._  `--'  _,'			        \n");
+    printf("                       `------'				        \n");
+    printf("--------------------------------------------------\n\n");
+
     for (i = 1; i <= numerotentativas; i++){
 
         printf("Tentativa %d de %d\n", i, numerotentativas);
@@ -61,6 +76,15 @@ int main(){
         pontos = pontos - pontosperdidos;
 
         if (chute == numerosecreto){
+            printf("  .-=========-. 		  \n");
+            printf("  \\'-=======-'/ 		  \n");
+            printf("  _|   .=.   |_ 		  \n");
+            printf(" ((|  {{1}}  |))		  \n");
+            printf("  \\|   /|\\   |/ 		  \n");
+            printf("   \\__ '`' __/  		  \n");
+            printf("     _`) (`_    		  \n");
+            printf("   _/_______\\_  		  \n");
+            printf(" /___________\\ 		\n\n");
             printf("Parabens, voce acertou na tentativa %d !! O numero secreto e: %d\n", i, numerosecreto);
             printf("Pontuacao %.1f: ", pontos);
             break;
@@ -68,6 +92,12 @@ int main(){
 
     }  
         if (i > numerotentativas){
+            printf("                      \n");
+            printf("      ,-=-.           \n");
+            printf("     /  +  \\         \n");
+            printf("     | ~~~ |          \n");
+            printf("     |R.I.P|          \n");
+            printf("\\vV,,|_____|V,VV,, \n\n");
             printf("Nao foi dessa vez! O numero secreto era: %d", numerosecreto);
         }
 }
